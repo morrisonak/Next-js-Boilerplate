@@ -1,10 +1,6 @@
 {
   "editor.tabSize": 2,
   "editor.detectIndentation": false,
-  "jest.autoRun": {
-    "watch": false,
-    "onSave": "test-file"
-  },
   "search.exclude": {
     "package-lock.json": true
   },
@@ -14,12 +10,14 @@
     "source.addMissingImports",
     "source.fixAll.eslint"
   ],
-  // Overriding multiple language files isn't available on VScode yet
-  "[json]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "jest.autoRun": {
+    "watch": true, // Start the jest with the watch flag
+    "onStartup": ["all-tests"] // Run all tests upon project launch
   },
-  "[jsonc]": {
+  "jest.showCoverageOnLoad": true, // Show code coverage when the project is launched
+  "jest.showTerminalOnLaunch": false, // Don't automatically open test explorer terminal on launch
+  // Multiple language settings for json and jsonc files
+  "[json][jsonc]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
