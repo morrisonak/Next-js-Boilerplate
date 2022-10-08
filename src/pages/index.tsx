@@ -28,7 +28,7 @@ const Index = () => {
         <span role="img" aria-label="rocket">
           🚀
         </span>{' '}
-        Next.js Boilerplate is a starter code for your Next js project by
+        COMMIT TEST is a starter code for your Next js project by
         putting developer experience first .{' '}
         <span role="img" aria-label="zap">
           ⚡️
